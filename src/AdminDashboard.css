@@ -1,0 +1,85 @@
+/* Container fix para sa scrolling */
+.dashboard {
+  padding: 40px 20px; /* Nilakihan ang padding sa taas */
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  overflow-y: auto; /* Pinupuwersa ang vertical scroll */
+  display: block; 
+}
+
+.stats-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Para kusa silang bababa pag masikip */
+  justify-content: center;
+}
+
+.card {
+  background: #3b82f6; /* Blue accent [cite: 23] */
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 150px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.filter-section {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-section input {
+  padding: 10px; /* [cite: 7] */
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+}
+
+.filter-section button {
+  padding: 10px 20px; /* [cite: 10] */
+  background-color: #1e293b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer; /* [cite: 11] */
+  transition: 0.2s;
+}
+
+/* Table styling na hindi nakakasira ng layout */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+table {
+  width: 100%; /* [cite: 13] */
+  border-collapse: collapse; /* [cite: 14] */
+  min-width: 800px;
+}
+
+th, td {
+  padding: 15px; /* [cite: 18] */
+  border-bottom: 1px solid #f1f5f9; /* [cite: 19] */
+  text-align: center; /* [cite: 20] */
+  color: #334155;
+}
+
+th {
+  background-color: #3b82f6; /* [cite: 23] */
+  color: white;
+  font-weight: 600;
+}

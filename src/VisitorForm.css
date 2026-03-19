@@ -1,0 +1,100 @@
+/* Shared Global Style */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%); /* Soft Pastel Gradient */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+/* Card design for Login and Form */
+.card, .form-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Modern Inputs */
+input[type="text"], input[type="email"], select {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #a6c1ee;
+  box-shadow: 0 0 0 4px rgba(166, 193, 238, 0.2);
+  outline: none;
+}
+
+/* Options Grid para sa "Reason" */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.option-box {
+  background-color: #f1f5f9;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 500;
+  color: #475569;
+  border: 2px solid transparent;
+}
+
+.option-box:hover {
+  background-color: #e2e8f0;
+}
+
+.option-box.selected {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Professional Buttons */
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #1e293b;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 15px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+  background: #3b82f6;
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+}
